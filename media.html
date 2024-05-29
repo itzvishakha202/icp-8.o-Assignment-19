@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media query</title>
+<style>
+    .card-img{
+        height: 50px;
+        width: 50px;
+        box-shadow: 2px 2px 2px gainsboro;
+        padding: 10px;
+        
+    }
+    .card-container{
+        height: auto;
+        width: 300px;
+        box-shadow: 5px 5px 5px gray;
+        padding: 5px;
+        margin: 40px 0px;
+        
+    }
+    .card-container1{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+       
+    }
+    .card-header-section{
+        display: flex;  
+        align-items: center;
+        font-size: 12px;   
+        justify-content: center;   
+    }
+
+    .card-heading{
+     margin-left: 5px;
+     padding: 10px;
+    }
+    .head{
+        text-align: center;
+        color: tomato;
+        font-size: 20px;
+    }
+    .desc{
+      margin: 0; 
+    }
+    /* small devices */
+    @media screen and (max-width:600px){
+    .card-heading{
+        text-align: center;
+        color: rgb(35, 35, 251);  
+        font-size: 30px;
+}
+    .head{
+        color: brown;
+        font-size: 40px;
+        text-align: center;
+    }
+}
+    /* normal devices */
+    @media screen and (min-width:601px) and (max-width:768px){
+.card-container{
+    
+    
+}
+.card-container1{
+    width: 100%;
+    flex-direction: column;
+
+    }
+}
+    /* tablet devices */
+    @media screen and (min-width:769px) and (max-width:992px){
+        .card-container{
+        justify-content:start;
+    }
+}
+.card{
+    margin: 10px;
+}
+    /* large devices */
+    @media screen and (min-width:993px) and (max-width:1200px){
+        
+    }
+</style>
+</head>
+<body>
+    <h2 class="head">ROAD TO CODE</h2>
+    <div class="card-container1">
+    <div class="card-container">
+        <div class="card">
+            <div class="card-header-section">
+            <img src="https://cdn.roadtocode.org/unique-features/affordable-md.png" class="card-img">
+             <h1 class="card-heading">Affordable Pricing</h1>  
+             </div>  
+             <p class="desc">Our course price ranges from ₹499 to ₹1999. Which is less than 1% of the cost of a college degree in India, and we provide more practical and industry-oriented knowledge.</p>
+            </div>
+            </div>
+            
+            <div class="card-container">
+            <div class="card">
+                <div class="card-header-section">
+                <img src="https://cdn.roadtocode.org/unique-features/multi-language-md.png" class="card-img">
+                 <h1 class="card-heading">Language Support</h1>  
+                 </div>  
+                 <p class="desc">We teach in Hindi and English(Hinglish) to make sure that language is not a barrier in your learning journey. We also support doubt resolution in Hindi, English and Marathi(मराठी).</p>
+                </div>
+                </div>
+                <div class="card-container">
+                <div class="card">
+                    <div class="card-header-section">
+                    <img src="https://cdn.roadtocode.org/unique-features/doubt-resolution-md.png" class="card-img">
+                     <h1 class="card-heading">Quick doubt Resolution</h1>  
+                     </div>  
+                     <p class="desc">Get your doubts resolved quickly. No more waiting for the next class. Once you ask a doubt our teaching assistants will resolve it as soon as possible.</p>
+                    </div>
+                    </div>
+                    <div class="card-container">
+                    <div class="card">
+                        <div class="card-header-section">
+                        <img src="https://cdn.roadtocode.org/unique-features/lifetime-free-notes-md.png" class="card-img">
+                         <h1 class="card-heading">Lifetime Free Notes</h1>  
+                         </div>  
+                         <p class="desc">Get lifetime access of the notes that you can refer anytime in the future. High-quality notes prepared by the instructor. No need to buy any books.</p>
+                        </div>
+                    </div>
+                 </div>
+
+
+</body>
+</html>
