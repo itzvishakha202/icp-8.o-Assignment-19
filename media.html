@@ -9,11 +9,18 @@
       </div>
 <style>
     .header {
-  padding: 60px;
+  padding: 10px;
   text-align: center;
   background: #1abc9c;
   color: white;
-  font-size: 30px;
+  font-size: 20px;
+}
+.footer {
+  padding: 10px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 10px;
 }
     .card-img{
         height: 50px;
@@ -67,31 +74,90 @@
         font-size: 40px;
         text-align: center;
     }
+    .header{
+        padding: 5px;
+  text-align: center;
+  background: #d8884f;
+  color: white;
+  font-size: 10px;
+  width: 100%;
+    }
+    .footer{
+        padding: 5px;
+  text-align: center;
+  background: #d8884f;
+  width: 100%;
+  color: white;
+  font-size: 10px; 
+    }
 }
     /* normal devices */
     @media screen and (min-width:601px) and (max-width:768px){
-.card-container{
-    
-    
+.card-heading{
+        text-align: center;
+        color: rgb(172, 172, 201);  
+        font-size: 30px;
 }
+    .head{
+        color: rgb(75, 14, 24);
+        font-size: 40px;
+        text-align: center;
+    }
+    .header{
+        padding: 5px;
+  text-align: center;
+  background: #d8884f;
+  color: white;
+  font-size: 15px;
+  width: 100%;
+    }
+    .footer{
+        padding: 5px;
+  text-align: center;
+  background: #d8884f;
+  width: 100%;
+  color: white;
+  font-size: 15px; 
+    }
+ 
 .card-container1{
     width: 100%;
     flex-direction: column;
-
-    }
+    justify-content: center;
 }
+    }
     /* tablet devices */
     @media screen and (min-width:769px) and (max-width:992px){
         .card-container{
         justify-content:start;
     }
+
 }
 .card{
     margin: 10px;
 }
     /* large devices */
-    @media screen and (min-width:993px) and (max-width:1200px){
-        
+    @media screen and (min-width:200px) and (max-width:471px){
+        .header{
+        padding: 5px;
+  text-align: center;
+  background: #dbd9d7;
+  color: white;
+  font-size: 7px;
+  width: 100%;
+    }
+    .footer{
+        padding: 5px;
+  text-align: center;
+  background: #decdc1;
+  width: 100%;
+  color: white;
+  font-size: 7px; 
+    }
+    .card-container1{
+    width: 100%;
+   justify-content: center;
+}
     }
 </style>
 </head>
@@ -138,7 +204,9 @@
                  </div>
 
 <footer>
-    @ll rights reserved
+    <div class="footer">
+    <h1>@ll rights reserved</h1>
+    </div>
 </footer>
 </body>
 </html>
